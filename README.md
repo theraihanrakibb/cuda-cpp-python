@@ -56,21 +56,6 @@ that maps logical tokens -> scattered physical blocks, and grow one block at a
 time. `04` implements this manager + the GPU attention kernel that reads
 through the block table; `05` trains a model and then serves it this way.
 
-## Pushing to GitHub
-
-This was generated in an environment without `git`/GitHub access, so the push
-is left to you. From this folder:
-
-    git init
-    git add .
-    git commit -m "CUDA C++ and Python: basics, KV cache, train+infer"
-    git branch -M main
-    git remote add origin https://github.com/<you>/<repo>.git
-    git push -u origin main
-
-Or, to publish into an empty repo you already created on GitHub, just add the
-remote and push as above. (Use a personal access token or SSH, not a password.)
-
 ## License
 
 MIT - do what you like, just keep the attribution.
